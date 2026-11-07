@@ -45,7 +45,7 @@ export const siteConfig: SiteConfig = {
 	title: "AWAurora233的博客",
 
 	// 站点副标题
-	subtitle: "",
+	subtitle: "极光落进长夜，微光自会相逢。",
 
 	// 站点 URL
 	site_url: "https://blog.xiaoyuer.us.ci",
@@ -62,6 +62,7 @@ export const siteConfig: SiteConfig = {
 		"博客",
 		"技术博客",
 		"静态博客",
+		"AWAurora233",
 	],
 
 	// 主题色

@@ -240,6 +240,16 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 				},
 			},
 		},
+		{
+			//线路状态查询组件
+			type: 'LineStatus',
+			// 是否启用该组件
+			enable: true,
+			// 组件位置
+			position: "sticky",
+			// 是否在文章详情页显示
+			showOnPostPage: true,
+		},
 	],
 
 	// 移动端底部组件配置列表

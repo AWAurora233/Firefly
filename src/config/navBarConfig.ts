@@ -99,6 +99,9 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 			
 			//状态监控
 			LinkPresets.UptimeFlare,
+
+			//Umami统计
+			LinkPresets.Umami,
 		],
 	});
 
@@ -235,6 +238,11 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		name: "状态监控",
 		url: "https://status.xiaoyuer.us.ci",
 		icon: "fa7-solid:chart-line",
+	},
+	Umami: {
+		name: "Umami统计",
+		url: "https://cloud.umami.is/analytics/us/websites/21ff7ea1-8989-4733-b8df-c3fb8d63a7e1",
+		icon: "simple-icons:umami",
 	},
 };
 

@@ -1,7 +1,7 @@
 ---
 title: 服务政策
 published: 2026-10-24
-updated: 2026-10-31
+updated: 2026-11-07
 tags: [服务政策]
 category: 博客
 slug: terms-of-service
@@ -9,11 +9,11 @@ draft: false
 comment: false
 ---
 
-> [!DANGER] DANGER
+> [!CAUTION] CAUTION
 > **以下服务政策均为暂行版**
 
 # 隐私政策
-更新日期：2026/10/31 生效日期：2026/11/01
+更新日期：2026/11/07 生效日期：2026/11/08
 
 ## 导言
 `blog.xiaoyuer.us.ci`（下称"本站"、"本服务"或"我们"）非常重视用户的隐私和个人信息保护。您在访问本站时，我们可能会收集和使用您的相关信息。我们希望通过本《隐私政策》向您说明，在访问本站时，我们如何收集、使用、储存和分享这些信息，以及我们为您提供的访问、更新、控制和保护这些信息的方式。本《隐私政策》与您所访问的博客网站息息相关，希望您仔细阅读，并在需要时按照本《隐私政策》的指引，作出您认为适当的选择。本《隐私政策》中涉及的相关技术词汇，我们尽量以简明扼要的表述，并提供进一步说明的链接，以便您的理解。
@@ -31,14 +31,15 @@ comment: false
 
 例如：
 
-- **Microsoft Clarity**：本站使用 Microsoft Clarity 进行访问统计与体验分析。Clarity 可能收集您的页面交互数据（点击、滚动、鼠标移动）、会话回放、热图、设备信息、浏览器 User-Agent、屏幕尺寸、页面 URL、Referer，并可能收集 IP 地址用于地理定位与 IP 排除功能（不长期存储完整 IP）。Clarity 通过 Cookie（`_clck`、`_clsk`）及 LocalStorage/sessionStorage 存储标识符，并可能设置由 Microsoft 控制的第三方 Cookie（详见持久化数据政策）。
 - **Giscus 评论系统**：本站使用 Giscus 提供评论功能。Giscus 基于 GitHub Discussions，评论数据实际存储于 GitHub。当评论区加载时，您的 IP 地址与浏览器信息会发送至 giscus.app 与 GitHub 以渲染讨论内容。发表评论需通过 GitHub OAuth 授权 Giscus 应用代表您发布内容，届时您的 GitHub 用户名、头像、个人主页链接及评论内容将在 GitHub 上公开可见。本站不自行存储您的评论数据。Giscus 的隐私实践详见其[隐私政策](https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md)。
 - **Moe-Counter**：本站使用 Moe-Counter 提供页面访问计数功能。计数组件加载或计数触发时，您的 IP 地址、浏览器 User-Agent、Referer 及所计数的页面标识会发送至 Moe-Counter 服务端，用于生成计数、去重与防刷。Moe-Counter 可能通过 Cookie 或 LocalStorage/sessionStorage 存储访客去重标识。公共实例相关请求由第三方运营方处理
+
+关于本站使用的 Microsoft Clarity 与 Umami Cloud 统计服务，详见第 7 节「关于第三方统计服务的特定说明」。
 
 ## 2. 信息存储与交换
 本站收集的有关您的信息和资料将保存在本站及（或）其第三方公司的服务器上。根据多种不同因素，如用户和服务提供商所处的位置，这些信息和资料可能**传送至您所在国家、地区或本站收集信息和资料所在地的境外**并在境外被访问、存储和展示。
 
-例如，本博客托管于 Cloudflare 和 EdgeOne；Giscus 评论数据存储于 GitHub 的服务器（由 GitHub 依据其隐私政策处理）；Microsoft Clarity 的数据由 Microsoft 存储和处理（主要位于美国及微软全球数据中心）；Moe-Counter 的计数数据存储于其部署服务器公共实例由第三方运营方存储。
+例如，本博客托管于 Cloudflare 和 EdgeOne；Giscus 评论数据存储于 GitHub 的服务器（由 GitHub 依据其隐私政策处理）；Moe-Counter 的计数数据存储于其部署服务器公共实例由第三方运营方存储；Microsoft Clarity 的数据由 Microsoft 存储和处理（主要位于美国及微软全球数据中心）；Umami Cloud 的统计数据由 Umami Software Inc. 存储和处理，其数据处理设施可能位于美国或其他地区，具体以 Umami Cloud 的实际部署与账户配置为准。
 
 有了此类数据传输，我们才能为您提供服务。访问/使用本站的服务或以其他方式向我们提供信息，即代表您了解您的个人信息处理、传输和储存将在发生在其他国家/地区。不同国家/地区可能适用不同的数据保护标准，并且/或者您可能无法享有与本地法律相同的权利。
 
@@ -64,7 +65,7 @@ comment: false
 
 **例外说明**：Microsoft Clarity 可能设置由 Microsoft 控制的第三方 Cookie（如 `MUID`），该 Cookie 可能由 Microsoft 用于其广告产品（如 Microsoft Advertising / Bing）。此类行为属于 Microsoft 依据其自身隐私政策实施的独立行为，不由本站控制，也不属于本站主动共享或转让个人信息的情形。
 
-**第三方服务说明**：本站使用的 Moe-Counter 计数服务（公共实例）由第三方运营，其收到的请求信息（IP、UA、Referer、页面标识等）由该运营方依据其自身政策处理，本站不控制其处理行为。
+**第三方服务说明**：本站使用的 Moe-Counter 计数服务（公共实例）由第三方运营，其收到的请求信息（IP、UA、Referer、页面标识等）由该运营方依据其自身政策处理，本站不控制其处理行为。本站使用的 Microsoft Clarity 与 Umami Cloud 统计服务分别由 Microsoft 与 Umami Software Inc. 运营，其收到的请求信息由相应运营方依据其自身政策处理，本站不控制其处理行为。Umami Cloud 默认不设置用于广告的第三方 Cookie，也不将访客数据用于跨站画像。
 
 另外，根据相关法律法规及国家标准，以下情形中，我们可能会共享、转让、公开披露个人信息，而无需事先征得您的授权同意：
 
@@ -82,21 +83,40 @@ comment: false
 
 如果您认为您无法通过上述途径和方式行使您的个人信息主体权利，您可以通过本《隐私政策》中提供的联系方式提出您的请求，我们会予以反馈。
 
-## 7. 恶意行为
+## 7. 关于第三方统计服务的特定说明
+本站使用 Microsoft Clarity 与 Umami Cloud 两项统计服务。以下分别说明其数据处理方式及您可采取的排除措施。
+
+### 7.1 Microsoft Clarity
+本站使用 Microsoft Clarity 进行访问统计与体验分析。Clarity 可能收集您的页面交互数据（点击、滚动、鼠标移动）、会话回放、热图、设备信息、浏览器 User-Agent、屏幕尺寸、页面 URL、Referer，并可能收集 IP 地址用于地理定位与 IP 排除功能（不长期存储完整 IP）。Clarity 通过 Cookie（`_clck`、`_clsk`）及 LocalStorage/sessionStorage 存储标识符，并可能设置由 Microsoft 控制的第三方 Cookie（详见持久化数据政策）。Clarity 的数据由 Microsoft 存储和处理，相关隐私实践详见 [Microsoft 隐私声明](https://privacy.microsoft.com/zh-cn/privacystatement)。
+
+您可以安装 [Microsoft 隐私仪表板](https://account.microsoft.com/privacy) 提供的退出工具，或使用浏览器隐私设置与隐私保护工具阻止 Clarity 脚本加载。
+
+### 7.2 Umami Cloud
+本站默认启用网络分析平台 Umami Cloud（`cloud.umami.is`）的统计服务。Umami 是一款注重隐私的网站分析服务，默认不使用 Cookie，不进行跨站追踪，不收集姓名、电子邮件等直接身份信息，也不将分析数据用于广告。Umami Cloud 可能收集页面 URL、Referer、浏览器 User-Agent、设备类型、操作系统、屏幕尺寸、语言、国家/地区（由 IP 地址解析）以及访问时间等匿名化或假名化数据。访客识别由 Umami 服务端通过哈希（IP 地址 + User-Agent + 定期轮换的盐值）完成，原始 IP 地址不被存储为持久字段。根据官方文档，该平台承诺符合欧洲 GDPR 与美国 CCPA 法规。
+
+您可以手动排除您在本站的 Umami 跟踪。具体方法为：在浏览器的开发者工具控制台中执行 `localStorage.setItem('umami.disabled', 1)`。执行后，您的后续访问将不再被 Umami 统计。您使用的隐私保护工具也可能拦截统计脚本。我们理解并尊重这一选择，并决定不对您的浏览体验施加障碍。
+
+您可以在分享页面查看本站的统计数据。请注意，我们保留随时更改或移除分享链接的权利。
+
+如有其他疑问，请通过电子邮件与我们联系。
+
+## 8. 恶意行为
 当监测到存在恶意访问、恶意请求、恶意攻击、恶意评论的行为时，为了控制受害范围，本站可能会临时将您的 IP 地址及访问信息短期内添加到黑名单，在黑名单期间内禁止访问。
 
 此黑名单可能被公开，并共享给其他站点使用，包括但不限于：IP 地址、设备信息、地理位置。
 
-## 8. 变更
+## 9. 变更
 我们可能适时修订本《隐私政策》的条款。当变更发生时，我们会在版本更新时向您提示新的《隐私政策》，并向您说明生效日期。请您仔细阅读变更后的《隐私政策》内容，若您继续访问本站，即表示您同意我们按照更新后的《隐私政策》处理您的个人信息。
 
 ---
 
 # 持久化数据政策
-更新日期：2026/10/31 生效日期：2026/11/01
+更新日期：2026/11/07 生效日期：2026/11/08
 
 ## 导言
 本站可能会使用持久化数据，如 Cookies 和 LocalStorage 来提供服务和分析流量。您的 IP 地址、用户代理以及性能和安全指标会与本站分享，以生成使用情况统计信息、改善服务品质以及检测滥用问题。本政策前半部分为 Cookie 部分，后半部分为 LocalStorage 部分。
+
+本站可能使用持久化数据（如 Cookies 和 LocalStorage）来提供服务和分析流量，并使用 Umami Cloud 进行注重隐私的访问统计。Umami Cloud 默认不使用 Cookie，也不在您的浏览器中写入 LocalStorage 用于追踪。
 
 如果您对本政策或一般的隐私事宜有任何疑问或意见，请通过电子邮箱 `xiaoyuer2333@outlook.com` 联系我们。
 
@@ -121,6 +141,7 @@ Cookies 在您设备中的保留时长各不相同。有些 Cookies 为"会话 C
 | `CLID` | 第三方（`c.clarity.ms`） | 约 12 个月 | 跨站标识符，关联 Microsoft 画像 |
 | `MUID` | 第三方（`.bing.com`） | 约 13 个月 | 与 Microsoft Advertising / Bing 共享 |
 | `ANONCHK` | 第三方 | 约 10 分钟 | 广告 clearinghouse 调用 |
+- **Umami Cloud**：Umami Cloud 默认不使用 Cookie 追踪访客，也不设置用于跨站识别或广告目的的第三方 Cookie。访客的会话分组由 Umami 服务端通过哈希计算完成，不依赖客户端 Cookie 或 LocalStorage。
 
 我们努力将 Cookies 使用限制在必要的最低限度。如果您认为出现了非必要的 Cookies，请联系我们。
 
@@ -163,6 +184,8 @@ LocalStorage 中存储的数据**仅本地保留在您的浏览器中**，不会
 - 服务登录信息
 - **Giscus 评论组件**的界面偏好与会话相关信息（用于保持评论区体验的一致性）
 - **Moe-Counter 计数组件**的访客去重标识或会话相关信息（用于避免重复计数、保持计数一致性）
+
+需要注意的是，Umami Cloud 默认不在您的浏览器中写入 LocalStorage 用于访客识别或追踪；其访客识别机制在服务端完成，不依赖客户端持久化存储。但本站提供的 `umami.disabled` 排除标志会存储在您的浏览器 LocalStorage 中，仅用于记住您退出统计的选择。
 
 我们不会也无法将 LocalStorage 用于：
 

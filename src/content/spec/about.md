@@ -75,9 +75,9 @@
 ## 我的项目
 ~~写过~~一些开源项目，大部分是为了解决自己的需求：
 
-::github{repo="1312333/ClassIsland-TimeOfDayTrigger"}
+::github{repo="AWAurora233/ClassIsland-TimeOfDayTrigger"}
 
-::github{repo="1312333/ClassIsland"}
+::github{repo="AWAurora233/ClassIsland"}
 
 ## 兴趣偏好
 
@@ -145,11 +145,13 @@
   </div>
 </div>
 
-不要问为什么用二级域名，Bro实在是没有钱买顶级域名了。
+为什么用二级域名?,Bro实在是没有钱买顶级域名了。
 
 > 本页面参考了[Pinpe](https://github.com/Pinpe)大佬的排版和样式
 
 > Meting-API 接口感谢[live-ling](https://github.com/live-ling)
+
+> 时间进度与节假日倒计时组件感谢[顾拾柒(olinll)](https://github.com/olinll)的[firefly-blog123](https://github.com/olinl17/firefly-blog123)
 
 ---
 

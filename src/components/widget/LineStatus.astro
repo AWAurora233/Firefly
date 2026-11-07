@@ -1,0 +1,102 @@
+---
+// 组件逻辑头部，这里留空即可
+---
+
+<div class="line-status-widget">
+    <div class="status-title">
+      <span>📡 线路状态</span>
+    </div>
+    <div class="status-grid">
+      <div class="status-item">
+        <div class="label">EdgeOne</div>
+        <div class="ping" id="ping-edgeone">测速中...</div>
+      </div>
+      <div class="status-item">
+        <div class="label">Cloudflare</div>
+        <div class="ping" id="ping-cf">测速中...</div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    /* 侧边栏卡片样式，已尽量适配 Firefly 风格 */
+    .line-status-widget {
+      background: var(--card-bg, rgba(255, 255, 255, 0.05));
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+    }
+    .status-title {
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+      color: var(--text-color, #666);
+      display: flex;
+      align-items: center;
+    }
+    .status-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .status-item {
+      flex: 1;
+      text-align: center;
+      background: var(--btn-bg, rgba(0, 0, 0, 0.1));
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .label {
+      font-size: 0.75rem;
+      color: var(--text-color-secondary, #888);
+      margin-bottom: 6px;
+    }
+    .ping {
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: #10b981; /* 绿色 */
+    }
+  </style>
+  
+  <script is:inline>
+    function measureLatency(url, elementId) {
+      const start = performance.now();
+      const img = new Image();
+      const element = document.getElementById(elementId);
+      
+      // 设置 5 秒超时
+      const timeout = setTimeout(() => {
+        element.textContent = '超时';
+        element.style.color = '#ef4444'; // 红色
+        img.src = ''; 
+      }, 5000);
+  
+      img.onload = () => {
+        clearTimeout(timeout);
+        const ping = Math.round(performance.now() - start);
+        element.textContent = ping + 'ms';
+      };
+      
+      img.onerror = () => {
+        clearTimeout(timeout);
+        const ping = Math.round(performance.now() - start);
+        element.textContent = ping + 'ms';
+      };
+      
+      // 加时间戳防止缓存
+      img.src = url + (url.includes('?') ? '&' : '?') + 't=' + Date.now();
+    }
+  
+    window.addEventListener('load', () => {
+      // ⚠️⚠️⚠️ 在这里替换成你真实的两个域名 ⚠️⚠️⚠️
+      // 注意：不要带 https:// 前面的东西？错，一定要带 https://
+      const edgeoneUrl = 'https://www.free-blog-xiaoyuer.ccwu.cc/16e276a105184dba8f73d260f4cdd3e6.txt'; 
+      const cfUrl = 'https://blog.xiaoyuer.us.ci/16e276a105184dba8f73d260f4cdd3e6.txt'; 
+  
+      setTimeout(() => {
+        measureLatency(edgeoneUrl, 'ping-edgeone');
+        measureLatency(cfUrl, 'ping-cf');
+      }, 500);
+    });
+  </script>
