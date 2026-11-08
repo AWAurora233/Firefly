@@ -241,7 +241,7 @@ export const LinkPresets: Record<string, NavBarLink> = {
 	},
 	Umami: {
 		name: "Umami统计",
-		url: "https://cloud.umami.is/analytics/us/websites/21ff7ea1-8989-4733-b8df-c3fb8d63a7e1",
+		url: "https://cloud.umami.is/share/w8ZqvVZIrJ7SoSpd",
 		icon: "simple-icons:umami",
 	},
 };
