@@ -11,7 +11,7 @@ tags:
 link:
   - label: "GitHub"
     icon: "fa7-brands:github"
-    value: "https://github.com/1312333/ClassIsland-TimeOfDayTrigger/releases"
+    value: "https://github.com/AWAurora233/ClassIsland-TimeOfDayTrigger/releases"
 lang: ""
 ---
 
