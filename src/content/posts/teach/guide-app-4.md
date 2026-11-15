@@ -1,17 +1,17 @@
 ---
 title: 如何在保留集控的情况下干掉冰点
 published: 2026-10-25
-updated: 2026-10-31
+updated: 2026-11-15
 description: 使用HugoAura在保留集控的情况下，骗过上面
 image: "api"
-tags: [教程, 软件,SEEWO,冰点还原,HugoAura]
+tags: [教程, 软件,SEEWO,冰点还原,HugoAura,HugoWidget,IceMelt]
 category: 教程
 draft: false
 ---
 
 # 前言
 
-天下苦冰点还原久矣，班级QQ经常要重登，十分麻烦，为此，我们需要下面这个项目来帮助我们
+天下苦冰点还原久矣
 > 原 HugoAura 早删库了，现在可用的是 HugoAura-Enhanced 。
 
 ::github{repo="blingbling-bow/HugoAura-Enhanced"}
@@ -35,6 +35,7 @@ draft: false
 - HugoAura 自动安装器
 - 希沃管家管理密码（通常为000000或666888）
 
+# 使用HugoAura-Enhanced
 ## 联网安装
 ### 网络可访问性检查
 ![](https://hugoaura.pages.dev/static/img/userGuide/installation/autoInstallation/CheckYourConnection_WithBg.png)
@@ -117,10 +118,48 @@ draft: false
 
 > 如果希沃管家里面没有雨之光环的设置按钮，找到版本号，像是对安卓那样连续点击版本号很多遍，就能进入设置页面了
 
-视频教程：
+### 视频教程：
 
 <iframe width="100%" height="468"
   src="//player.bilibili.com/player.html?bvid=BV1GLaU6uEYx&p=1&autoplay=0"
   scrolling="no" border="0" frameborder="no"
   framespacing="0" allowfullscreen="true">
 </iframe>
+
+# 使用其它
+## HugoWidget
+开源仓库地址：
+::github{repo="HugoWidget/HugoWidgets"}
+release下载地址：
+::github{repo="HugoWidget/HugoSetup"}
+命令行版本仓库：
+::github{repo="HugoWidget/HugoProgs"}
+
+QQ群号：707741689，入群问题答案见问卷。
+项目几乎停止更新，但仍然欢迎入群讨论协作！
+
+> [!CAUTION] CAUTION
+> 声明：本项目仅用于研究或教育目的。请勿用于违反当地法律、侵犯著作权或软件 EULA 的用途。使用者需自行承担因不当使用带来的一切后果，开发者不承担任何责任。
+>
+> "希沃"、"Seewo" 是由广州视睿电子科技有限公司所持有的商标。HugoWidget所有子项目与广州视睿电子科技有限公司无关。
+>
+> HugoWidgets 及其他项目遵循 GNU GPL-3.0 许可证开源。
+
+### 视频教程：
+
+<iframe width="100%" height="468"
+  src="//player.bilibili.com/player.html?bvid=BV1dTGB6NEBm&p=1&autoplay=0"
+  scrolling="no" border="0" frameborder="no"
+  framespacing="0" allowfullscreen="true">
+</iframe>
+
+## IceMelt
+
+::github{repo="chenjintang-shrimp/IceMelt"}
+用 KDU 与 WinDisk 破防各类冰点 / 还原软件
+
+WinDisk 是内核驱动，直接构造 SCSI 请求下发到磁盘 miniport，绕过文件系统，也绕过还原软件挂在上层的过滤驱动。 KDU 关掉驱动签名强制，让没有签名的 WinDisk 能加载 —— 只在装载真的被 577 拒绝时才用得上 （判据见下：装载返回码，不是任何查询接口的读数）。
+
+两者配合，在 NTFS 层面摘掉还原软件的注册表痕迹、换掉 SYSTEM hive，然后交回给你重启。不替换任何驱动文件。
+> [!CAUTION] 免责声明
+> 涉及内核驱动加载与裸盘写入，误用可导致数据损坏或系统无法启动。仅在你有权操作的机器与磁盘上 使用。第 8 步之后一旦开始写入就没有回滚路径：出错时程序会中止并报出"系统状态未知"，然后提示 你自行重启（本工具不触发任何复位）。
