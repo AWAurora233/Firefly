@@ -1,102 +1,110 @@
----
-// 组件逻辑头部，这里留空即可
----
-
 <div class="line-status-widget">
-    <div class="status-title">
-      <span>📡 线路状态</span>
+  <div class="lsw-title">
+    <span>📡 线路状态</span>
+  </div>
+  <div class="lsw-grid">
+    <div class="lsw-item">
+      <div class="lsw-label">EdgeOne</div>
+      <div class="lsw-ping" id="ping-edgeone">测速中...</div>
     </div>
-    <div class="status-grid">
-      <div class="status-item">
-        <div class="label">EdgeOne</div>
-        <div class="ping" id="ping-edgeone">测速中...</div>
-      </div>
-      <div class="status-item">
-        <div class="label">Cloudflare</div>
-        <div class="ping" id="ping-cf">测速中...</div>
-      </div>
+    <div class="lsw-item">
+      <div class="lsw-label">Cloudflare</div>
+      <div class="lsw-ping" id="ping-cf">测速中...</div>
     </div>
   </div>
-  
-  <style>
-    /* 侧边栏卡片样式，已尽量适配 Firefly 风格 */
-    .line-status-widget {
-      background: var(--card-bg, rgba(255, 255, 255, 0.05));
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 16px;
-      border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
-    }
-    .status-title {
-      font-size: 0.9rem;
-      font-weight: bold;
-      margin-bottom: 12px;
-      color: var(--text-color, #666);
-      display: flex;
-      align-items: center;
-    }
-    .status-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .status-item {
-      flex: 1;
-      text-align: center;
-      background: var(--btn-bg, rgba(0, 0, 0, 0.1));
-      padding: 10px;
-      border-radius: 8px;
-    }
-    .label {
-      font-size: 0.75rem;
-      color: var(--text-color-secondary, #888);
-      margin-bottom: 6px;
-    }
-    .ping {
-      font-size: 0.95rem;
-      font-weight: bold;
-      color: #10b981; /* 绿色 */
-    }
-  </style>
-  
-  <script is:inline>
-    function measureLatency(url, elementId) {
-      const start = performance.now();
-      const img = new Image();
-      const element = document.getElementById(elementId);
-      
-      // 设置 5 秒超时
-      const timeout = setTimeout(() => {
-        element.textContent = '超时';
-        element.style.color = '#ef4444'; // 红色
-        img.src = ''; 
-      }, 5000);
-  
-      img.onload = () => {
-        clearTimeout(timeout);
+</div>
+
+<style is:global>
+  /* 使用 lsw- 前缀，避免与 Firefly 主题全局样式冲突 */
+  .line-status-widget {
+    background: var(--card-bg, rgba(255, 255, 255, 0.05));
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+  }
+  .lsw-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--text-color, #666);
+    display: flex;
+    align-items: center;
+  }
+  .lsw-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .lsw-item {
+    flex: 1;
+    text-align: center;
+    background: var(--btn-bg, rgba(0, 0, 0, 0.1));
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .lsw-label {
+    font-size: 0.75rem;
+    color: var(--text-color-secondary, #888);
+    margin-bottom: 6px;
+  }
+  .lsw-ping {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #10b981;
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    // 防重复定义：组件若被多次实例化，只初始化一次
+    if (window.__lineStatusInit) return;
+    window.__lineStatusInit = true;
+
+    /**
+     * 用 fetch 测速，比 new Image() 加载 txt 更可靠
+     * @param {string} url    测速目标（建议为小体积、允许 CORS 的资源）
+     * @param {string} elId   显示延迟的元素 id
+     * @param {number} timeoutMs 超时时间
+     */
+    async function measureLatency(url, elId, timeoutMs = 5000) {
+      const el = document.getElementById(elId);
+      if (!el) return;
+
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+      try {
+        const start = performance.now();
+        // cache: 'no-store' 让浏览器不复用缓存，但不会像随机参数那样污染 CDN 缓存键
+        await fetch(url, {
+          method: 'GET',
+          mode: 'cors',
+          cache: 'no-store',
+          signal: controller.signal,
+        });
         const ping = Math.round(performance.now() - start);
-        element.textContent = ping + 'ms';
-      };
-      
-      img.onerror = () => {
-        clearTimeout(timeout);
-        const ping = Math.round(performance.now() - start);
-        element.textContent = ping + 'ms';
-      };
-      
-      // 加时间戳防止缓存
-      img.src = url + (url.includes('?') ? '&' : '?') + 't=' + Date.now();
+        el.textContent = ping + 'ms';
+        el.style.color = ping > 800 ? '#f59e0b' : '#10b981';
+      } catch (err) {
+        // AbortError 表示超时，其他错误为网络/跨域问题
+        el.textContent = err.name === 'AbortError' ? '超时' : '失败';
+        el.style.color = '#ef4444';
+      } finally {
+        clearTimeout(timer);
+      }
     }
-  
+
     window.addEventListener('load', () => {
-      // ⚠️⚠️⚠️ 在这里替换成你真实的两个域名 ⚠️⚠️⚠️
-      // 注意：不要带 https:// 前面的东西？错，一定要带 https://
-      const edgeoneUrl = 'https://www.free-blog-xiaoyuer.ccwu.cc/16e276a105184dba8f73d260f4cdd3e6.txt'; 
-      const cfUrl = 'https://blog.xiaoyuer.us.ci/16e276a105184dba8f73d260f4cdd3e6.txt'; 
-  
+      // ⚠️ 替换成你自己的两个域名下的小体积测速资源
+      // 建议：1x1 图片、或返回 204 的轻量端点，且服务端需允许 CORS
+      const edgeoneUrl = 'https://www.free-blog-xiaoyuer.ccwu.cc/16e276a105184dba8f73d260f4cdd3e6.txt';
+      const cfUrl = 'https://blog.xiaoyuer.us.ci/16e276a105184dba8f73d260f4cdd3e6.txt';
+
       setTimeout(() => {
         measureLatency(edgeoneUrl, 'ping-edgeone');
         measureLatency(cfUrl, 'ping-cf');
       }, 500);
     });
-  </script>
+  })();
+</script>

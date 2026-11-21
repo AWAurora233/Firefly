@@ -122,9 +122,9 @@
         <span class="tech-label">哔哩哔哩</span>
         <span class="tech-value">3546597638015463</span>
     </div>
-    <div class="tech-card act-card" onclick="window.open('https://github.com/1312333', '_blank');">
+    <div class="tech-card act-card" onclick="window.open('https://github.com/AWAurora233', '_blank');">
         <span class="tech-label">GitHub</span>
-        <span class="tech-value">1312333</span>
+        <span class="tech-value">AWAurora233</span>
     </div>
 </div>
 
