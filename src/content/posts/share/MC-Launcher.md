@@ -12,14 +12,14 @@ draft: false
 ## 前言 
 > MC启动器是一个在日常游戏中必不可少的工具<br>此文章就是将各大常用MC启动器的官网以及下载地址整理至此，并持续更新<br>方便各位小白下载并体验游戏内容<br>此页也方便各位同学将此分享给其它人。<br>你可以按下Ctrl+F搜索关键词以快速定位并寻找自己所需的资源。<br>话不多说，直接开始！
 
-!!! todo 提示
+> [!INFO] INFO
     该文章将会持续更新，部分链接存在时效性注意甄别<br>你可以点击右下角文章目录来快速寻找你所需要的启动器资源。<br>包括但不限于收录以下内容：<br>官方启动器下载；<br>国内玩家常用启动器；<br>国外玩家常用启动器；<br>PojavLauncher之类基于Boardwalk在手机上运行Java版Mc的启动器；
 
-!!! fail 下载提示
-    本站大部分收录的资源基本为引用Github链接的形式提供，中国大陆的用户可能并不方便使用它，你可以考虑使用镜像下载或者是[Steam++](https://steampp.net/)之类的加速代理工具下载<br>本站不提供任何代理/翻墙服务内容，倘若Github访问遇到问题请自行B站。
+> [!ATTENTION] 下载提示
+    本站大部分收录的资源基本为引用Github链接的形式提供，中国大陆的用户可能并不方便使用它，你可以考虑使用镜像下载或者是[Watt Toolkit「原名 Steam++」](https://steampp.net/)之类的加速代理工具下载<br>本站不提供任何代理/翻墙服务内容，倘若Github访问遇到问题请自行B站。
    
 
-!!! fail 关于收录/侵权
+> [!ATTENTION] 关于收录/侵权
     你可以向xiaoyuer2333@outlook.com<br>提供您的启动器的相关信息以在此页收录。<br>同时，如有侵权也可以联系我删除<br>排名不分前后！<br>排名不分前后！<br>排名不分前后！<br>部分启动器介绍会引用一些Up主的B站视频链接，如若侵权请联系我。
     
 
@@ -33,19 +33,19 @@ draft: false
 
 ### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     本帖仅分享 @龙腾猫跃 的爱发电下载页与Github仓库地址<br>如有能力请赞助原作者！
     >[Github仓库](https://github.com/Meloong-Git/PCL)<br>[爱发电-推荐](https://afdian.com/p/0164034c016c11ebafcb52540025c377)
 
 > [!ATTENTION] 注意
-> v2.14.0.0以上无法下载MC
+> v2.14.0.0以上不提供下载服务
 
 > 2.14.0.0 正式版.zip
 >
 > 链接: https://pan.baidu.com/s/1LPUnVaihCXw_5Jpn8a0vqA?pwd=pmn2 提取码: pmn2
 >
->MD5:c74c5a432fdbfe9e9f0d6002c8dca7af
->SHA1:8f31b71af6727ea61b9818b7bebefa45943f704c
+>MD5:c74c5a432fdbfe9e9f0d6002c8dca7af<br>
+>SHA1:8f31b71af6727ea61b9818b7bebefa45943f704c<br>
 >SHA256:0835d346cd0f95c1472a3c0655d66e6ca8b7e4494ca0083768e3316f2cd4e7b1    
 
 ### [PCL2-CE] Plain Craft Launcher 2社区版
@@ -54,7 +54,7 @@ draft: false
     PCL2 社区版并非由上游开发者龙腾猫跃开发与管理，且与龙腾猫跃本人无关。使用 PCL2 社区版带来的一切风险请您自行承担。<br>PCL2 社区版下载不需要您支付任何费用。PCL-Community 组织及其成员始终建议您使用官方版 PCL2。<br>社区版出现问题请向社区版仓库反馈，不要向主线仓库反馈！
 
 
-!!! todo 关于运行库需求
+> [!INFO] 关于运行库需求
     自 2.9.3 版本以后，社区版需要 .NET Framework 4.8 才能运行。<br>自 2.10.0 版本以后，社区版需要 Windows 10 20H2 或以上版本的系统以及 .NET Framework 4.8.1 才能运行。若不满足最低要求，只能使用 2.9.x 版本（Legacy 版本）。<br>PCL-Community 始终建议您使用最新版本的系统和相关组件以保证系统安全和良好体验。
  
 
@@ -71,7 +71,7 @@ draft: false
 
 #### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     本帖子仅提供Github 发行版链接，大陆用户可能并不方便，可以考虑使用镜像。
     >[Github](https://github.com/PCL-Community/PCL2-CE)<br>[Github 发行版](https://github.com/PCL-Community/PCL2-CE/releases)
 
@@ -93,7 +93,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 
 ### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     本帖分享官网的下载页以及Github发行版页面。
     >[HMCL官网-推荐](https://hmcl.huangyuhui.net/download/)<br>[Github 发行版](https://github.com/HMCL-dev/HMCL/releases)
 
@@ -110,7 +110,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 
 ### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     本帖分享官网的下载页以及TT的爱发电页面欢迎支持ta。
     >[BakaXL官网-推荐](https://www.bakaxl.com/#download)<br>[爱发电](https://afdian.com/a/TT702)
 
@@ -122,7 +122,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 
 ### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     本帖分享微软商店的下载页面以及Github发行版的下载页面。
     >[Microsoft Store-推荐](https://apps.microsoft.com/detail/9p4nqqxq942p?ocid=webpdpshare)<br>[Github 发行版](https://github.com/Xcube-Studio/Natsurainko.FluentLauncher/releases/)
    
@@ -133,7 +133,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 
 ### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     本帖分享Github发行版的下载页面。
     >[Github 发行版-推荐](https://github.com/Blessing-Studio/WonderLab/releases/)
  
@@ -151,7 +151,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 ### 下载
 
 
-!!! todo 链接
+> [!INFO] 链接
     因为该启动器并不开源，故本帖分享官网的下载链接
     >[LauncherX - 下载](https://corona.studio/lx/download)
  
@@ -160,7 +160,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 
 ### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     因为该启动器并不开源，故本帖分享官网的下载链接，国内用户可能访问受限。
     >[Lunar - 下载](https://www.lunarclient.com/)
 
@@ -169,7 +169,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 
 ### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     因为该启动器并不开源，故本帖分享官网的下载链接，国内用户可能访问受限。
     >[Badlion - 下载](https://www.badlion.net/)
 
@@ -193,7 +193,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
     该页面仅提供Android版的安装包与下载链接，iOS的安装较为复杂，本站暂不阐述。
  
 
-!!! todo 链接
+> [!INFO] 链接
     本帖分享PojavLauncher官网的链接以及与Github相关的链接（仅限安卓）。
     >[Github发行版](https://github.com/PojavLauncherTeam/PojavLauncher/releases)<br>[Github Action - 最新/推荐](https://github.com/PojavLauncherTeam/PojavLauncher/actions/workflows/android.yml/)<br>[官网链接wiki](https://pojavlauncher.app/wiki/getting_started/INSTALL.html#android)
  
@@ -209,7 +209,7 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 
 #### 下载
 
-!!! todo 链接
+> [!INFO] 链接
     本帖分享Fold Craft Launcher的Github发行版页面链接。
     >[Github发行版](https://github.com/FCL-Team/FoldCraftLauncher/releases)
     
@@ -225,9 +225,8 @@ HMCL 有着强大的跨平台能力。它不仅支持 Windows、Linux、macOS �
 <br>[点击这里](https://www.bilibili.com/video/BV12BXvYEEx1)访问原视频地址
 
 #### 下载
->小声bb：其实Up主在评论区提供了123盘的下载链接…，直接前往评论区复制下载即可～
 
-!!! todo 链接
+> [!INFO] 链接
     本帖分享Zalith Launcher的Github发行版页面链接。
     >[Github发行版](https://github.com/ZalithLauncher/ZalithLauncher/releases)
   

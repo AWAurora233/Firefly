@@ -13,13 +13,11 @@ draft: false
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116023944548325&bvid=BV1xQFkzmEGE&cid=35868510916&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 
-
-
 ## 安装Tyranor
 
 >Tyranor是安卓上的Galgame模拟器，现已支持基于Ons/Krkr2引擎的游戏。基本大众些的Galgame基本都可以运行。
 
-![TyranorLogo - 这几把有点糊(我压缩的问题)](/LimePan/androidGalgame/Tyranor_icon.webp)<br>
+![TyranorLogo](https://img.jbzj.com/do/uploads/litimg/260922/37-1790059843.png)<br>
 
 ![Telegram Update Log](/LimePan/androidGalgame/tg_ty.webp)<br>
 
@@ -45,28 +43,38 @@ https://lime.lanzout.com/ieuyZ3hysbgf
 
 ![h2 install](/LimePan/androidGalgame/install_ty.webp)<br>
 
+## Tyranor-Next
+
+>基于 Tyranor 模拟器逆向重写 的多引擎视觉小说（Galgame）模拟器，面向 Android 平台。
+
+![](https://raw.githubusercontent.com/Weiss-UltimateSavior/Tyranor-Next/master/screenshots/index1.png)
+
+::github{repo="Weiss-UltimateSavior/Tyranor-Next"}
+
+### 视频详细
+<iframe width="100%" height="468"
+  src="//player.bilibili.com/player.html?bvid=BV1Sz8x6iEd9&p=1&autoplay=0"
+  scrolling="no" border="0" frameborder="no"
+  framespacing="0" allowfullscreen="true">
+</iframe>
+
 ## 获取更多资源
 Galgame资源你可以从很多地方获取，接下来我会提供些你可能用的到的网站去获取`Krkr2/Ons`移植过的Galgame资源。<br>
 
-!!! todo 提示
-    视频中有许多内容我没有提到，一个是因为平台敏感缘故，还有原因是Galgame无需太过出圈，只留给真正感兴趣的同学。
+> [!INFO] INFO
+> 视频中有许多内容没有提到，一个是因为平台敏感缘故，还有原因是Galgame无需太过出圈，只留给真正感兴趣的同学。
 
 ### GalSites
 
 >免费GalGame资源站目录，收录了诸多免费的gal资源站，是一个收藏夹类的项目。
 
-!!! fail 提示
-    由于奇怪的原因，你可能无法正常访问Github，开始前请先准备好合适的网络环境。
+> [!ATTENTION] ATTENTION
+> 由于奇怪的原因，你可能无法正常访问Github，开始前请先准备好合适的网络环境。
 
 ![站点截图](/LimePan/androidGalgame/galsites.webp)<br>
 
 
----
-
-Github/Galsites
-https://github.com/Shrans/GalSites
-
----
+::github{repo="Shrans/GalSites"}
 
 ### 真红小站(失落小站)
 
@@ -88,8 +96,8 @@ https://shinnku.com/
 
 ### 梓澪の妙妙屋
 
-!!! fail 提示
-    由于奇怪的原因，你可能无法正常访问它，开始前请先准备好合适的网络环境。
+> [!ATTENTION] ATTENTION
+> 由于奇怪的原因，你可能无法正常访问它，开始前请先准备好合适的网络环境。
 
 推荐这个站点的原因和真红小站的原因类似，都是可以高速直链下载。
 <br>
@@ -114,8 +122,8 @@ https://zi0.cc/
 
 >在视频中由于篇幅限制我无法展开来说明，在这里详细说说。
 
-!!! fail 提示
-    内容由Gemini-3.0-Pro生成。
+> [!ATTENTION] ATTENTION
+> 内容由Gemini-3.0-Pro生成。
 
 ### 引言：手机玩 Galgame 的两把“万能钥匙”
 
@@ -204,4 +212,4 @@ ONS 的全称是 **ONScripter**。它的历史比 Krkr 更有“极客”味。<
 
 现在，虽然 **Ren'Py** 引擎（原生支持安卓）和官方直接发行的安卓版 Galgame 越来越多，但 Krkr 和 Ons 依然是二次元资源库里两座绕不开的大山。
 
-> ~~参考~~(复制)文章: https://sudachi.top/2026/02/06/galgameandroid/
+> ~~参考~~(复制大部分内容)文章: https://sudachi.top/2026/02/06/galgameandroid/
