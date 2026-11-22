@@ -52,7 +52,7 @@ export const siteConfig: SiteConfig = {
 
 	// 站点描述
 	description:
-		"此网站是AWAurora233的个人博客。",
+		"欢迎来到AWAurora233的个人博客，这里记录了我的学习笔记、技术分享以及生活点滴，希望你能在这里找到有用的信息。",
 
 	// 站点关键词
 	keywords: [
