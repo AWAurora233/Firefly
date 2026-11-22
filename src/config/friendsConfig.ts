@@ -34,7 +34,7 @@ export const friendsConfig: FriendLink[] = [
 	},
 	{
 		title: "MKStoler1024's Blog",
-		imgurl: "https://forum.smart-teach.cn/assets/avatars/Jd0IaZYWUnFvFFDx.png",
+		imgurl: "https://avatars.githubusercontent.com/u/158786854?v=4",
 		desc: "掠过浮霞光影，最后能赢下生活的，还是我们。",
 		siteurl: "https://blog.edicdn.eu.org",
 		tags: ["Blog"],

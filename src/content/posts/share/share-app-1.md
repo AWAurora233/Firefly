@@ -1,7 +1,7 @@
 ---
 title: 【转载/修改】一些神秘小软件
 published: 2026-10-02
-updated: 2026-10-03
+updated: 2026-11-22
 description: 分享一些实用软件的精简版、激活工具和替代方案，包括 WPS特别版、HEU KMS Activator、Office Tool Plus、希沃白板激活工具等，仅供学习交流。
 image: ""
 tags: [分享, 软件,WPS,Office Tool Plus,KMS,SEEVVO​]
@@ -53,6 +53,16 @@ Office Tool Plus是一款Office部署工具，可以安装、卸载、激活Offi
 [官网](https://otp.landian.vip/zh-cn/)
 
 [……或者这个文档站](https://www.officetool.plus/zh-cn/)
+
+## KMS 地址列表快速查看
+
+[KMS 列表 | Yerong の小窝](https://www.coolhub.top/tech-articles/kms_list.html)
+
+卸载 Office 是不会清除激活信息的，激活前需先清除激活信息
+使用KMS手动激活 Office 方法：
+1. 安装 Office 批量许可证 (Volume)。
+2. 设置一个 KMS 主机地址（开头已给出 端口为 1688），并保存设置。
+3. 点击激活按钮即可。
 
 ## 希沃白板 3 激活绕过工具：EN3Cracker​
 MutanaFavazza 针对希沃白板 3 (EasiNote 3) 因官方停止维护导致的激活难题，开发了EN3Cracker，该工具可以绕过激活验证，使您能够继续使用希沃白板 3。

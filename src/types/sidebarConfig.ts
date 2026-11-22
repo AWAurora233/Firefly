@@ -12,7 +12,8 @@ export type WidgetComponentType =
 	| "siteInfo"
 	| "dynamic"
     | "schedule"
-	| "LineStatus";
+	| "umamistats"
+	| "linestatus";
 
 export type WidgetComponentConfig = {
 	type: WidgetComponentType; // 组件类型

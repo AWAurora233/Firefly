@@ -19,6 +19,7 @@ import type {
 import { isWidgetVisibleOnPageType } from "@/utils/responsive-utils";
 import { isArticleDetailPage } from "@/utils/url-utils";
 import Schedule from "@/components/widget/Schedule.astro";
+import UmamiStats from "@/components/widget/UmamiStats.astro";
 import LineStatus from "@/components/widget/LineStatus.astro";
 
 interface Props {
@@ -58,7 +59,8 @@ const componentMap = {
 	siteInfo: SiteInfo,
 	dynamic: Dynamic,
 	schedule: Schedule,
-	lineStatus: LineStatus,
+	umamistats: UmamiStats,
+	linestatus: LineStatus,
 };
 
 // 获取侧边栏位置

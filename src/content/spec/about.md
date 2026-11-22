@@ -153,6 +153,8 @@
 
 > 时间进度与节假日倒计时组件感谢[顾拾柒(olinll)](https://github.com/olinll)的[firefly-blog123](https://github.com/olinl17/firefly-blog123)
 
+> Umami 访问统计卡片感谢[THW](https://blog.tianhw.top/posts/fuwari-umami-stats/)[(H2O-ME)](https://github.com/H2O-ME)
+
 ---
 
 *感谢你的来访！希望在这里能找到对你有用的内容！*
