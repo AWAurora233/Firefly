@@ -1,5 +1,5 @@
 ---
-title: 服务政策
+title: 服务政策（暂行版）
 published: 2026-10-24
 updated: 2026-11-07
 tags: [服务政策]
